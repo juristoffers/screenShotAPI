@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+
 
 app.get('/tradereview/:identifier', async (req, res) => {
   const identifier = req.params.identifier;
@@ -46,6 +46,7 @@ app.get('/tradereview/:identifier', async (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
