@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install --omit=dev && node gpt.js",
-    "dev": "node gpt.js"
+    "start": "node gpt.js",
+    "dev": "nodemon gpt.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,6 @@
     "ai": "^3.1.27",
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
-    "cherio": "^1.0.0-rc.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "firebase": "^10.12.2",
